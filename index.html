@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome Love 💕</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .login-box {
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    h2 {
+      margin-bottom: 20px;
+      color: #ff4d79;
+    }
+    input {
+      padding: 10px 15px;
+      width: 80%;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    button {
+      padding: 10px 25px;
+      background-color: #ff4d79;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background-color: #ff3366;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <h2>Enter Our Secret World 💞</h2>
+    <form onsubmit="return checkPassword()">
+      <input type="password" id="pass" placeholder="Enter Password"><br>
+      <button type="submit">Enter Chat</button>
+    </form>
+  </div>
+
+  <script>
+    function checkPassword() {
+      const password = document.getElementById("pass").value;
+      if (password === "9936777036") {
+        window.location.href = "chat.php";
+        return false;
+      } else {
+        alert("Oops! Wrong password 😢");
+        return false;
+      }
+    }
+  </script>
+</body>
+</html>
